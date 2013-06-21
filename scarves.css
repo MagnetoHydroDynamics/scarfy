@@ -1,0 +1,59 @@
+#scarves {
+        position: fixed;
+        top: 0%;
+}
+
+#scarves.right-few {
+        right: 220px;
+}
+#scarves.right-many {
+        right: 320px;
+}
+#scarves.left-few {
+        left: 150px;
+}
+#scarves.left-many {
+        left: 50px;
+}
+
+#scarves a,
+#scarves a:hover {
+        width:25px;
+        height:250px;
+
+        position:fixed;
+        top:0;
+        left:inherit;
+
+        transition: all 1s, transform 1s;
+        -moz-transition: all 1s, -moz-transform 1s;
+        -webkit-transition: all 1s, -webkit-transform 1s;
+        -o-transition: all 1s, -o-transform 1s;
+}
+
+#scarves a { opacity: 0.4; }
+
+#scarves a:hover { opacity: 1.0; }
+
+#scarves a img {
+        margin: 0;
+        padding: 0;
+        width: inherit;
+        height: inherit;
+        opacity: inherit;
+}
+
+#scarves a.at-50px,  #scarves a.to-50px :hover { margin-top: -200px; }
+#scarves a.at-100px, #scarves a.to-100px:hover { margin-top: -150px; }
+#scarves a.at-150px, #scarves a.to-150px:hover { margin-top: -100px; }
+#scarves a.at-200px, #scarves a.to-200px:hover { margin-top: -50px;  }
+#scarves a.at-250px, #scarves a.to-250px:hover { margin-top: 0px;    }
+
+#scarves a:nth-child(1) { margin-left: 0; }
+#scarves a:nth-child(2) { margin-left: 40px; }
+#scarves a:nth-child(3) { margin-left: 80px; }
+#scarves a:nth-child(4) { margin-left: 120px; }
+#scarves a:nth-child(5) { margin-left: 160px; }
+#scarves a:nth-child(6) { margin-left: 200px; }
+#scarves a:nth-child(7) { margin-left: 240px; }
+#scarves a:nth-child(8) { margin-left: 280px; }

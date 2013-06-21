@@ -1,0 +1,54 @@
+# Tumblr Scarves
+
+Scarves are a popular adornment to ones blog.
+
+They are little graphics that sit in the top corner and has a movement
+animation when one hovers the mouse over it.
+
+# Installation
+
+You should be at least a little familiar with HTML and CSS to do this.
+
+Go to your tumblr blog, click Customize, choose Edit HTML.
+
+Locate the `style` tag. Paste the contents of `scarves.css` before the closing
+`</style>`.
+
+Locate the `body` tag. Paste the contents of `scarves.html` right after the
+opening `<body>`.
+
+The bit of HTML you just pasted is the thing you need to edit now. It consists
+of a `div` containing eight `a` tags wiht `img` inside like so:
+
+    <div id='scarves' class='right-few'>
+        <a class='at-100px to-200px' href=''>
+            <img src=''/></a>
+        ...
+    </div>
+
+The `at-100px to-200px` specify how low you want your scarf to hang, and how
+far you want to move it on mouse-hover. Available settings are 50, 100, 150,
+200 and 250 pixels.
+
+The `href=''` is where you put the URL you want the scarf to be a link to.
+
+The `src=''` is where you put the URL to the scarf graphic. It is assumed that
+all scarves are 25 pixels wide and 250 pixels long.
+
+Now, depending on the number of scarves and your blog layout, you can adjust
+the whole assembly.
+
+    <div id='scarves' class='right-few'>
+
+The `class='right-few'` can be changed to one of `right-few`, `right-many`,
+`left-few` and `left-many`.
+
+`left`/`right` depends on your preferred layout. `-few` is for 4 or fewer
+scarves, `-many` is for up to 8.
+
+Last, you can delete any of the superfluous `a` tags.
+
+# To Do
+
+* Find out if I can somehow get hosting to let you use a `link` tag to acquire
+  the CSS.
